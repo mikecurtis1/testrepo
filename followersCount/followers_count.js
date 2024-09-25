@@ -18,3 +18,7 @@ function checkCountValue() {
     }
 }
 
+function resetCount(){
+    count = 0;
+    alert('Counter reset to: ${count}');
+}
