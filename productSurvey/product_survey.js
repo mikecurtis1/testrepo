@@ -14,10 +14,13 @@ function submitFeedback() {
     document.getElementById('userEmail').innerHTML = email;
     document.getElementById('userJob').innerHTML = job;
     document.getElementById('userDesignation').innerHTML = designation;
-    document.getElementById('userProductChoice').innerHTML = productType;
+    document.getElementById('userProductChoice1').innerHTML = productType;
+    document.getElementById('userProductChoice2').innerHTML = productType;
     document.getElementById('userFeedback').innerHTML = feedback;
     document.getElementById('userExperince').innerHTML = experience;
     document.getElementById('userInfo').style.display = 'block';
+
+    
 
     alert('Thank you for your valuable feedback')
 }
@@ -31,3 +34,5 @@ document.addEventListener('keydown', function(event) {
       submitFeedback();
     }
 });
+
+document.getElementsByClassName('userProductChoice').innerHTML = 'foo';
