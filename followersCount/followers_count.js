@@ -20,5 +20,8 @@ function checkCountValue() {
 
 function resetCount(){
     count = 0;
-    alert('Counter reset to: ${count}');
+    document.getElementById('countDisplay').innerHTML=count;
+    // timeout needed or else the alert runs before count is changed
+    // https://stackoverflow.com/questions/40945552/why-does-alert-appear-before-background-changes
+    setTimeout(function(){alert('Counter reset to: ' + count)}, 1);
 }
