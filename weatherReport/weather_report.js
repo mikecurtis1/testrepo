@@ -1,9 +1,9 @@
 function showweatherDetails(event) {
     event.preventDefault();
 	
-	//https://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=d4b9a8561137179464daea6def000e3c&units=metric
+	//https://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=YOUR_API_KEY&units=metric
 	const city = document.getElementById('city').value;
-	const apiKey = 'd4b9a8561137179464daea6def000e3c'; // Replace 'YOUR_API_KEY' with your actual API key
+	const apiKey = 'YOUR_API_KEY'; // Replace 'YOUR_API_KEY' with your actual API key
 	const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 	fetch(apiUrl)
